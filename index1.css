@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#nav {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 3rem;
+    margin: auto;
+    top: 0;
+    left: 0;
+    background-color: #06070985;
+    
+}
+
+#mobnav {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 1em;
+}
+
+.mnav {
+    width: auto;
+    height: 1.5em;
+    transition: transform .01s;
+}
+
+.mnav:active {
+    transform: scale(0.9);
+}
+
+.navlink {
+    list-style: none;
+    display: flex; 
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    width: 100%;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.navlinkdesign {
+    text-decoration: none;
+    color: white;
+}
+
+.navlinkdesign:hover {
+    color: rgb(69, 90, 147);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: rgb(69, 90, 147);
+}
+
+.icon {
+    height: 56px;
+    width: 56px;
+    transition: transform .5s;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
+.landingpic {
+    position: relative;
+    height: 90vh;
+    width: 100%;
+    top: 0vw;
+    background-image: linear-gradient(150deg, rgba(27, 27, 27, 0.5), rgba(32, 32, 32, 0.5), rgba(26, 25, 25, 0.6)),
+    url(Pictures/bgpic1.png);
+    padding: 190px;
+    padding-left: 7vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.wlogo {
+    width: max(440px, 42%);
+    height: auto;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1.3rem;
+    color: white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(17, 20, 23, 0.7), rgb(13, 16, 17, 1)), url(Pictures/futurebg.png);
+    background-position: center;
+}
+
+#main {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.artcont1 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    margin: 1rem;
+    padding: 1.5rem;
+    background: rgba(97, 97, 97, 0.20);
+    width: 70rem;
+}
+
+.artcont2 {
+    /* border: solid blue; */
+    height: 100%;
+    padding: 1rem;
+}
+
+.artimg {
+    object-fit: cover;
+    width: 25rem;
+    height: auto;
+    /* border: solid red; */
+}
+
+.artfunc {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    list-style: none;
+    font-size: small;
+}
+
+.artscroll {
+    width: 500px;
+    margin-inline: 95rem;
+    margin-block: 70px;
+}
+
+.artscrollnum {
+    list-style: none;
+    display: flex; 
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.arrows {
+    width: 1.2rem;
+}
+
+.footer {
+    justify-content: space-between;
+    background-color: #1b1f21;
+    /* border: solid white; */
+    border-width: 1px;
+    padding: 50px;
+    /* margin-top: 180px; */
+}
+
+.ftheader {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+}
+
+.fticons {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 170%;
+    margin-top: 15px;
+}
+
+.fticons li:hover {
+    transition: transform .3s;
+    transform: scale(1.3);
+}
+
+.ftemail {
+    /* width: 16.5%; */
+    margin-top: 15px;
+    
+}
+
+.ftcontent {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.mobftcontent {
+    display: none;
+    align-items: center;
+}
+
+.mobfticons {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 1.25em;
+    margin-bottom: 20px;
+}
+
+.mobftemail {
+    display: none;
+    width: auto;
+}
+
+.mobftemail span{
+    font-size: 1rem;
+
+}
+
+p {
+    text-align: justify;
+}
+
+@media screen and (max-width: 1128px) {
+    .artcont1 {
+        width: 55rem;
+    }
+
+    body {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .artimg {
+        width: 35vw;
+        height: 16rem;
+    }
+    
+    .artcont1 {
+        width: 50rem;
+    }
+    
+}
+
+@media screen and (max-width: 793px) {
+    .artcont1 {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 75%;
+    }
+    .artcont2 {
+        width: 65vw;
+    }
+
+    body {
+        font-size: 1.1rem;
+    }
+
+    .artimg {
+        width: 65vw;
+        height: 18rem;
+    }
+
+    .ftcontent {
+        display: none;
+    }
+
+    .ftheader {
+        display: none;
+    }
+
+    .mobftemail {
+        margin-inline: 10%;
+        display: block;
+    }
+
+    .mobftcontent {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 517px) {
+    #nav {
+        display: none;
+    }
+
+    #mobnav {
+        position: fixed;
+        display: block;
+    }
+
+    .navlink {
+        list-style: none;
+        display: flex; 
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        width: 100%;
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
+    
+    .landingpic {
+        height: 10px;
+    }
+
+    .wlogo {
+        position: absolute;
+        bottom: 100px;
+        right: 1em;
+        left: 1em;
+        width: max(200px, 90%);
+        height: auto;
+    }
+
+    body {
+        font-size: 1em;
+    }
+
+    .artcont1 {
+        width: 90%;
+    }
+
+    .artcont2 {
+        width: 80vw;
+    }
+
+    .artimg {
+        width: 80vw;
+        height: 13rem;
+    }
+
+    .artscroll {
+        width: 350px;
+    }
+}

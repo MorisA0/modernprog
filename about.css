@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#nav {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 3rem;
+    margin: auto;
+    top: 0;
+    left: 0;
+    background-color: #06070985;
+    
+}
+
+
+.navlink {
+    list-style: none;
+    display: flex; 
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    width: 100%;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.navlinkdesign {
+    text-decoration: none;
+    color: white;
+}
+
+.navlinkdesign:hover {
+    color: rgb(69, 90, 147);
+}
+
+#mobnav {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 1em;
+}
+
+.mnav {
+    width: auto;
+    height: 1.5em;
+    transition: transform .01s;
+}
+
+.mnav:active {
+    transform: scale(0.9);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: rgb(69, 90, 147); 
+}
+
+.icon {
+    height: 56px;
+    width: 56px;
+    transition: transform .5s;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
+.main {
+    margin-inline: 20%;
+    padding-top: 10vh;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1.3em;
+    color: white;
+    background-image: linear-gradient(rgba(33, 40, 45, 0.1), rgba(17, 20, 23, 0.9), rgb(13, 16, 17)), url(Pictures/futurebg.png);
+}
+
+p, h1 {
+    text-align: justify;
+    margin: 2rem;
+}
+
+.footer {
+    justify-content: space-between;
+    background-color: #1b1f21;
+    /* border: solid white; */
+    border-width: 1px;
+    padding: 50px;
+    margin-top: 150px;
+}
+
+.ftheader {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+}
+
+.fticons {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 170%;
+    margin-top: 15px;
+}
+
+.fticons li:hover {
+    transition: transform .3s;
+    transform: scale(1.3);
+}
+
+.ftemail {
+    /* width: 16.5%; */
+    margin-top: 15px;
+    
+}
+
+.ftcontent {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.mobftcontent {
+    display: none;
+    align-items: center;
+}
+
+.mobfticons {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 1.25em;
+    margin-bottom: 20px;
+}
+
+.mobftemail {
+    display: none;
+    width: auto;
+}
+
+.mobftemail span{
+    font-size: 1rem;
+
+}
+
+
+
+@media screen and (max-width: 1128px) {
+    body {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 793px) {
+    .main {
+        margin-inline: 10%;
+    }
+
+    body {
+        font-size: 1.1rem;
+    }
+
+    .ftcontent {
+        display: none;
+    }
+
+    .ftheader {
+        display: none;
+    }
+
+    .mobftemail {
+        margin-inline: 10%;
+        display: block;
+    }
+
+    .mobftcontent {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 517px) {
+    #nav {
+        display: none;
+    }
+
+    #mobnav {
+        display: block;
+
+    }
+
+    .navlink {
+        list-style: none;
+        display: flex; 
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        width: 100%;
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
+
+    .main {
+        margin-inline: 1%;
+    }
+    
+    body {
+        font-size: 1.2em;
+    }
+}
